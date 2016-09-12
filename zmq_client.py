@@ -5,7 +5,7 @@ import time
 import logging
 import os
 
-HOST = '127.0.0.1'
+HOST = '10.140.161.16'
 PORT = '4444'
 logging.basicConfig(filename='subscriber.log', level=logging.INFO)
 

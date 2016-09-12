@@ -25,8 +25,7 @@ app = Flask(__name__)
 @app.route("/downcase/", methods=['GET'])
 def lowerString():
 	_strn = request.args.get('param')
-	#response = 'lower case of {} is {}'.format(_strn, _strn.lower())
-	response = _strn
+	response = 'lower case of {} is {}'.format(_strn, _strn.lower())
 	publish_message(response)
 	return response
 
